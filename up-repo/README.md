@@ -7,8 +7,9 @@ Update Tool for all Git Repositories in a Directory
 
 ## Features
 
-- Git Pull in all Git Repositories in a Directory
 - Git Garbage Collection in all Git Repositories in a Directory
+- Git Prune in all Git Repositories in a Directory
+- Git Pull in all Git Repositories in a Directory
 
 ## Build
 

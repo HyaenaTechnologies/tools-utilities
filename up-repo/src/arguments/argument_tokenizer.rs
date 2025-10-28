@@ -8,7 +8,9 @@ use std::{
 
 use super::{print_help::print_help_message, print_version::print_version_number};
 
-use crate::git::{clean_repository::clean_repo, update_repository::up_repo};
+use crate::git::{
+    clean_repository::clean_repo, prune_repository::prune_repo, update_repository::update_repo,
+};
 
 // Command Line Argument Tokenizer
 pub fn tokenize_arguments() -> ExitCode {
@@ -31,14 +33,18 @@ pub fn tokenize_arguments() -> ExitCode {
             "clean" | "--c" => {
                 clean_repo();
             }
-            "update" | "--u" => {
-                up_repo();
-            }
             "help" | "--h" => {
                 print_help_message();
             }
+            "prune" | "--p" => {
+                prune_repo();
+            }
+
             "version" | "--v" => {
                 print_version_number();
+            }
+            "update" | "--u" => {
+                update_repo();
             }
             &_ => {
                 writeln!(

@@ -10,7 +10,6 @@ use std::{
     },
 };
 
-// Main Entry Point
 // Clean All Git Repositories in a Directory
 pub fn clean_repo() -> () {
     let current_directory_path: PathBuf = current_dir().unwrap();

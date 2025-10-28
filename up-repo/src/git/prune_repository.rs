@@ -10,8 +10,8 @@ use std::{
     },
 };
 
-// Update All Git Repositories in a Directory
-pub fn update_repo() -> () {
+// Prune All Git Repositories in a Directory
+pub fn prune_repo() -> () {
     let current_directory_path: PathBuf = current_dir().unwrap();
     let current_directory: ReadDir = read_dir(current_directory_path).unwrap();
 
@@ -23,7 +23,7 @@ pub fn update_repo() -> () {
 
         match git_repository {
             Ok(()) => {
-                let git_pull: Result<Output, Error> = Command::new("git").arg("pull").output();
+                let git_pull: Result<Output, Error> = Command::new("git").arg("prune").output();
 
                 match git_pull {
                     Ok(pulling) => {

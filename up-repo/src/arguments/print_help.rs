@@ -26,12 +26,13 @@ pub fn print_help_message() -> () {
         "\x1b[32;3mhelp\x1b[0m\t\tPrint Commands and Flags"
     )
     .unwrap();
-    writeln!(standard_output, "\x1b[32;3mupdate\x1b[0m\t\tGit Pull").unwrap();
+    writeln!(standard_output, "\x1b[32;3mprune\x1b[0m\t\tGit Prune").unwrap();
     writeln!(
         standard_output,
         "\x1b[32;3mversion\x1b[0m\t\tPrint Version Number"
     )
     .unwrap();
+    writeln!(standard_output, "\x1b[32;3mupdate\x1b[0m\t\tGit Pull").unwrap();
     writeln!(standard_output, "").unwrap();
     writeln!(standard_output, "\x1b[32;1;3mFlags:\t\tDescription:\x1b[0m").unwrap();
     writeln!(standard_output, "").unwrap();
@@ -45,12 +46,13 @@ pub fn print_help_message() -> () {
         "\x1b[32;3m--h\x1b[0m\t\tPrint Commands and Flags"
     )
     .unwrap();
-    writeln!(standard_output, "\x1b[32;3m--u\x1b[0m\t\tGit Pull").unwrap();
+    writeln!(standard_output, "\x1b[32;3m--p\x1b[0m\t\tGit Prune").unwrap();
     writeln!(
         standard_output,
         "\x1b[32;3m--v\x1b[0m\t\tPrint Version Number"
     )
     .unwrap();
+    writeln!(standard_output, "\x1b[32;3m--u\x1b[0m\t\tGit Pull").unwrap();
     writeln!(standard_output, "").unwrap();
 
     return ();
