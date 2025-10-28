@@ -22,6 +22,7 @@ pub fn tokenize_arguments() -> ExitCode {
             command_line_arguments
         )
         .unwrap();
+        writeln!(standard_output, "").unwrap();
         print_help_message();
         eprintln!("\x1b[31;1;3;4mError(1) - Exiting Git Repository Update Tool\x1b[0m");
         return ExitCode::FAILURE;
@@ -46,6 +47,7 @@ pub fn tokenize_arguments() -> ExitCode {
                     command_line_arguments[1].trim()
                 )
                 .unwrap();
+                writeln!(standard_output, "").unwrap();
                 print_help_message();
                 eprintln!("\x1b[31;1;3;4mError(1) - Exiting Git Repository Update Tool\x1b[0m");
                 return ExitCode::FAILURE;

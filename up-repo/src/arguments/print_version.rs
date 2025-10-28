@@ -16,7 +16,7 @@ pub fn print_version_number() -> () {
     writeln!(standard_output, "").unwrap();
     writeln!(
         standard_output,
-        "\x1b[32;1;3mVersion Number:\x1b[0m\t {}",
+        "\x1b[32;1;3mVersion Number:\x1b[0m\t{}",
         version_number
     )
     .unwrap();
