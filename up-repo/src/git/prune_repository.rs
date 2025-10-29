@@ -27,12 +27,17 @@ pub fn prune_repo() -> () {
 
                 match git_pull {
                     Ok(pulling) => {
+                        writeln!(
+                            standard_output,
+                            "\x1b[32;1;3mPruning Git Repository...\x1b[0m"
+                        )
+                        .unwrap();
                         standard_output.write_all(&pulling.stdout).unwrap();
                         writeln!(standard_output, "{}", pulling.status).unwrap();
                     }
                     Err(error) => {
                         eprintln!(
-                            "\x1b[31;1;3;4mError Pulling Git Repositories:\x1b[0m {}",
+                            "\x1b[31;1;3;4mError Pruning Git Repositories:\x1b[0m {}",
                             error
                         );
                         exit(1);
