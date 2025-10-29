@@ -25,7 +25,7 @@ mv ./target/x86_64-unknown-linux-gnu/release/null-log ./binary
 sudo ./binary/null-log
 ```
 
-## Install System Update Daemon
+## Install Null Log
 
 ```shell
 mv ./null-log ~/
