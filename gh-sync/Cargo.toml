@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+
+[package]
+description = "Synchronize GitHub Forks"
+edition = "2024"
+include = [
+  "Cargo.toml",
+  "src/**/*"
+]
+name = "gh_sync"
+publish = false
+rust-version = "1.90.0"
+version = "1.0.0"
+
+[[bin]]
+name = "gh-sync"
+path = "src/main.rs"
+
