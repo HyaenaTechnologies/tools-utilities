@@ -32,8 +32,7 @@ fn main() -> () {
                     .arg("repo")
                     .arg("sync")
                     .arg(fork.unwrap())
-                    .output();
-                let mut standard_output: StdoutLock = stdout().lock();
+                    .output();                
 
                 match github_synchronize {
                     Ok(synchronizing) => {
