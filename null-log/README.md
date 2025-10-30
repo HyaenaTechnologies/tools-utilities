@@ -2,7 +2,7 @@
 
 # Null Log
 
-Clean Log File Contents - Retain Log Files
+Clean Log File Contents - Retain Log Files - On Unix Operating Systems
 
 ## Features
 
