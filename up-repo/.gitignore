@@ -69,5 +69,5 @@ dkms.conf
 *.dwo
 
 # Environment Variable Files
-.env
+*.env
 
